@@ -37,7 +37,7 @@ col1,col2= st.columns(2)
 with col1:
     st.markdown(intro_text)
 with col2:
-    st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", caption="data scientist",use_column_width=True)
+    st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", caption="data scientist",use_container_width=True)
 
 
 
