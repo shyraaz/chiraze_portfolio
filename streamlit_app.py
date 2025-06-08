@@ -9,8 +9,7 @@ header {Visibility: hidden;}
 </style>
 """
 
- st.markdown(
-     """
+ st.markdown("""
      <style>
      /*header container*/
      .navbar {
