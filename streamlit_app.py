@@ -66,7 +66,7 @@ text_decoration:underline
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown{
+st.markdown(
 """
      <style>
      html {
