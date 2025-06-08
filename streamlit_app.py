@@ -8,6 +8,32 @@ footer {Visibility: hidden;}
 header {Visibility: hidden;}
 </style>
 """
+st.markdown("""
+<style>
+.header_left{
+font_size: 2.5rem;
+font_weight:bold;
+color: #ff89ff;
+display:flex;
+align_items:center;
+gap:0.5rem;
+}
+
+.header_center{
+    background-color: transparent;
+    bordr:none;
+    color:#fff;
+    font_size:1.1rem
+    curser:pointer;
+}
+
+.header-center button:hover{
+color:"ff89ff;
+text_decoration:underline
+}
+
+</style>
+""", unsafe_allow_html=True)
 st.markdown(
     """
     <style>
