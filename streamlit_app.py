@@ -11,7 +11,7 @@ header {Visibility: hidden;}
 st.markdown("""
 <style>
 .header_left{
-font_size: 5.5rem;
+font_size: 10px;
 font_weight:bold;
 color: white;
 display:flex;
