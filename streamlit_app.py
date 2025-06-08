@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="collapsed")
 st.title('🎈 Chiraze Feriani') 
 
 def get_base64(file_path):
@@ -11,6 +11,13 @@ def get_base64(file_path):
 img_path = "digital brain (2).png"  # your image file
 img_base64 = get_base64(img_path)
 
+hide_treamlit_style = """
+<style>
+#MainMenu {Visibility: hidden;}
+footer {Visibility: hidden;}
+header {Visibility: hidden;}
+</style>
+st.markdow(hide_streamlit_style, unsafe_allow_html=True)
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
