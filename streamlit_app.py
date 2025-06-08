@@ -2,7 +2,7 @@ import streamlit as st
 import base64
 st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="collapsed")
 hide_streamlit_style = """
-<style>
+<style>  
 #MainMenu {Visibility: hidden;}
 footer {Visibility: hidden;}
 header {Visibility: hidden;}
@@ -13,7 +13,7 @@ st.markdown("""
 .header_left{
 font_size: 5.5rem;
 font_weight:bold;
-color: #ff89ff;
+color: white;
 display:flex;
 align_items:center;
 gap:0.5rem;
