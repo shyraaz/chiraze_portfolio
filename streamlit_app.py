@@ -18,7 +18,7 @@ footer {Visibility: hidden;}
 header {Visibility: hidden;}
 </style>
 """
-st.markdow(hide_streamlit_style, unsafe_allow_html=True)
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
