@@ -1,5 +1,32 @@
 import streamlit as st
+import base64
 
-st.title('🎈 App Name') 
+st.title('🎈 Chiraze Feriani') 
+
+def get_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+img_path = "digital brain (2).png"  # your image file
+img_base64 = get_base64(img_path)
+
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] {{
+    background-image: url("data:image/png;base64,{img_base64}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Your page content
+st.title("Hello, I'm Chayma!")
+st.write("This is my portfolio with a fullscreen image background.")
 
 st.write('Hello world!')
