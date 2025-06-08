@@ -7,7 +7,7 @@ hide_streamlit_style = """
 footer {Visibility: hidden;}
 header {Visibility: hidden;}
 </style>
-"""
+"""  
 
 st.markdown("""
      <style>
