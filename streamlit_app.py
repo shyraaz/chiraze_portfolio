@@ -93,10 +93,10 @@ with col1:
 with col2:
     st.markdown("""
     <div class="navbar">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <button onclick="window.scrollTo(0, document.getElementById('about').offsettop);"> About </button>
+        <button onclick="window.scrollTo(0, document.getElementById('skills').offsettop);"> Skills </button>
+        <button onclick="window.scrollTo(0, document.getElementById('projects').offsettop);"> Projects </button>
+        <button onclick="window.scrollTo(0, document.getEelemntById('contact').offsettop);"> Contact </button>
     </div>
     
     """, unsafe_allow_html=True)
