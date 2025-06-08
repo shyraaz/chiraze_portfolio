@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-
+st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_side_bar_stet="expanded")
 st.title('🎈 Chiraze Feriani') 
 
 def get_base64(file_path):
