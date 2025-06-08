@@ -74,7 +74,7 @@ with col3:
     st.markdown(
         """
         <div class=header-left> CF🎀 </div>
-        """,unsafe_allow_html=True
+        """,unsafe_allow_html=True)
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
