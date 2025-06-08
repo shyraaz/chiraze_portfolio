@@ -92,7 +92,7 @@ with col1:
                 unsafe_allow_html=True)
 with col2:
     st.markdown("""
-    <div class="navbar">
+    <div class="header-center">
         <button onclick="window.scrollTo(0, document.getElementById('about').offsettop);"> About </button>
         <button onclick="window.scrollTo(0, document.getElementById('skills').offsettop);"> Skills </button>
         <button onclick="window.scrollTo(0, document.getElementById('projects').offsettop);"> Projects </button>
