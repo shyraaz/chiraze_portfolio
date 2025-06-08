@@ -6,7 +6,7 @@ hide_streamlit_style = """
 #MainMenu {Visibility: hidden;}
 footer {Visibility: hidden;}
 header {Visibility: hidden;}
-</style>
+</style> 
 """  
 
 st.markdown("""
