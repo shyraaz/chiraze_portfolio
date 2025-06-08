@@ -12,7 +12,7 @@ header {Visibility: hidden;}
 st.markdown("""
      <style>
      /*header container*/
-     .navbar {
+     .button-row {
      display: flex;
      justify-content: center;
      aligh-item: center;
@@ -20,7 +20,7 @@ st.markdown("""
      gap: 3rem;
      }
      /* link style*/
-    .navlink {
+    .stbutton > button {
     text-decoration: none;
     font-size: 1.2 rem;
     font-weight:600;
@@ -32,7 +32,7 @@ st.markdown("""
     }
 
     /* hover effect*/
-    .navlink: hover {
+    .stbutton > button: hover {
     color: #ff89ff;
     
     }
@@ -49,6 +49,7 @@ align_items:center;
 gap:0.5rem;
 }
 
+            
 .header_center{
     background-color: transparent;
     bordr:none;
@@ -64,6 +65,15 @@ text_decoration:underline
 
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown{
+"""
+     <style>
+     html {
+            scroll-behavior: smooth;
+            }
+     </style>
+     """, unsafe_allow_html=True
 st.markdown(
     """
     <style>
@@ -85,22 +95,46 @@ def get_base64(file_path):
 
 img_path = "digital brain (2).png"  # your image file
 img_base64 = get_base64(img_path)
-col1,col2,col3 = st.columns([1,2,3])
+
+col1,col2,col3 = st.columns([1,2,3,])
 
 with col1:
     st.markdown('<div class="header-left"> CF🎀 </div>',
                 unsafe_allow_html=True)
 with col2:
     st.markdown("""
-    <div class="header-center">
-        <button onclick="window.scrollTo(0, document.getElementById('about').offsettop);"> About </button>
-        <button onclick="window.scrollTo(0, document.getElementById('skills').offsettop);"> Skills </button>
-        <button onclick="window.scrollTo(0, document.getElementById('projects').offsettop);"> Projects </button>
-        <button onclick="window.scrollTo(0, document.getEelemntById('contact').offsettop);"> Contact </button>
+    <'div class="button-row">', unsafe_allow_html=True)
+    c1,c2,c3,c4= st.clumns(4)
+
+    with c1:
+    if st.button("About"):
+         st.session_state.section="about"
+     with c2:
+     if st.button("Skills"):
+          st.session_state.section="skills"
+     with c3("Projects"):
+          st.session_state.section="projects"
+     with c4("Contact"):
+          st.session_state.section="contact"
+          
+    st.markdown('</div>', unsafe_allow_html=True)
+        
     </div>
     
     """, unsafe_allow_html=True)
-    
+section = st.session_state.get("section", "")
+if section == "about":
+    st.markdown("## 🧠 About")
+    st.write("Hi, I'm Chiraze – Junior Data Scientist, passionate about AI & ML.")
+elif section == "skills":
+    st.markdown("## 🧰 Skills")
+    st.write("Python, TensorFlow, Scikit-learn, SQL, Pandas, etc.")
+elif section == "projects":
+    st.markdown("## 🚀 Projects")
+    st.write("• Fraud detection model\n• NLP chatbot\n• Data dashboards")
+elif section == "contact":
+    st.markdown("## 📬 Contact")
+    st.write("Email: chiraze@example.com\nLinkedIn: [link]")
 with col3:
     st.markdown(
         """
