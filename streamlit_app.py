@@ -8,6 +8,37 @@ footer {Visibility: hidden;}
 header {Visibility: hidden;}
 </style>
 """
+
+ st.markdown(
+     """
+     <style>
+     /*header container*/
+     .navbar {
+     display: flex;
+     justify-content: center;
+     aligh-item: center;
+     margin-top:20px
+     gap: 3rem;
+     }
+     /* link style*/
+    .navlink {
+    text-decoration: none;
+    font-size: 1.2 rem;
+    font-weight:600;
+    color: white;
+    background: transparent;
+    border:none;
+    cursor:pointer;
+    transition: color 0.3s ease;
+    }
+
+    /* hover effect*/
+    .navlink: hover {
+    color: #ff89ff;
+    
+    }
+    </style>
+    """, unsafe_allow_html=True)
 st.markdown("""
 <style>
 .header_left{
@@ -62,12 +93,13 @@ with col1:
                 unsafe_allow_html=True)
 with col2:
     st.markdown("""
-    <div class="header-center">
-        <button onclick="window.scrollTo(0, document.getElementById('about').offsettop);"> About </button>
-        <button onclick="window.scrollTo(0, document.getElementById('skills').offsettop);"> Skills </button>
-        <button onclick="window.scrollTo(0, document.getElementById('projects').offsettop);"> Projects </button>
-        <button onclick="window.scrollTo(0, document.getEelemntById('contact').offsettop);"> Contact </button>
+    <div class="navbar">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
     </div>
+    
     """, unsafe_allow_html=True)
     
 with col3:
