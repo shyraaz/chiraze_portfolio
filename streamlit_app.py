@@ -73,7 +73,7 @@ st.markdown{
             scroll-behavior: smooth;
             }
      </style>
-     """, unsafe_allow_html=True
+     """, unsafe_allow_html=True)
 st.markdown(
     """
     <style>
