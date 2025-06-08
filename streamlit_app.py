@@ -11,7 +11,7 @@ header {Visibility: hidden;}
 st.markdown("""
 <style>
 .header_left{
-font_size: 2.5rem;
+font_size: 5.5rem;
 font_weight:bold;
 color: #ff89ff;
 display:flex;
@@ -60,7 +60,21 @@ col1,col2,col3 = st.columns([1,2,3])
 with col1:
     st.markdown('<div class="header-left"> CF🎀 </div>',
                 unsafe_allow_html=True)
-            
+with col2:
+    st.markdown("""
+    <div class="header-center">
+        <button onclick="window.scrollTo(0, document.getElementById('about').offsettop);"> About </button>
+        <button onclick="window.scrollTo(0, document.getElementById('skills').offsettop);"> Skills </button>
+        <button onclick="window.scrollTo(0, document.getElementById('projects').offsettop);"> Projects </button>
+        <button onclick="window.scrollTo(0, document.getEelemntById('contact').offsettop);"> Contact </button>
+    </div>
+    """, unsafe_allow_html=True)
+    
+with col3:
+    st.markdown(
+        """
+        <div class=header-left> CF🎀 </div>
+        """,unsafe_allow_html=True
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
