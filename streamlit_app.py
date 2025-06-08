@@ -11,6 +11,15 @@ def get_base64(file_path):
 img_path = "digital brain (2).png"  # your image file
 img_base64 = get_base64(img_path)
 
+intro_text = """ About Me i'am a Junior Data Scientist, newly graduated from research master in intelligent systems
+i'am passionate with ai and machine leanring models"""
+
+col1,col2= st.columns(2)
+with col1:
+    st.markdown(intro_text)
+with col2:
+    st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", captio="data scientist",use_column_width=True)
+
 hide_streamlit_style = """
 <style>
 #MainMenu {Visibility: hidden;}
@@ -34,14 +43,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Your page content
-intro_text = """ About Me i'am a Junior Data Scientist, newly graduated from research master in intelligent systems
-i'am passionate with ai and machine leanring models"""
 
-col1,col2= st.columns(2)
-with col1:
-    st.markdown(intro_text)
-with col2:
-    st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", captio="data scientist",use_column_width=True)
 
 
 
