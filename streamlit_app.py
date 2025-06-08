@@ -26,7 +26,6 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Your page content
-st.title("Hello, I'm Chayma!")
-st.write("This is my portfolio with a fullscreen image background.")
+st.title("Hello, I'm Chiraze!")
+st.write("And I'am a Data Scientist.")
 
-st.write('Hello world!')
