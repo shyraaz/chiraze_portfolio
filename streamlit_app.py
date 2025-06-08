@@ -55,7 +55,12 @@ def get_base64(file_path):
 
 img_path = "digital brain (2).png"  # your image file
 img_base64 = get_base64(img_path)
+col1,col2,col3 = st.columns([1,2,3])
 
+with col1:
+    st.markdown('<div class="header-left"> CF🎀 </div>,
+                unsafe_allow_html=True)
+            
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
