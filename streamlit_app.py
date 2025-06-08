@@ -11,7 +11,7 @@ def get_base64(file_path):
 img_path = "digital brain (2).png"  # your image file
 img_base64 = get_base64(img_path)
 
-hide_treamlit_style = """
+hide_streamlit_style = """
 <style>
 #MainMenu {Visibility: hidden;}
 footer {Visibility: hidden;}
