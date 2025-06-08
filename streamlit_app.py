@@ -105,7 +105,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 intro_text = """ 
-<div class="intro_text">
+<div class="intro_text" id="about">
 
 <h2>About Me</h2>
 <p>i'am a Junior Data Scientist, newly graduated from research master in intelligent systems
