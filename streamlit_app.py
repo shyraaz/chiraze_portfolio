@@ -75,6 +75,22 @@ with col3:
         """
         <div class=header-left> CF🎀 </div>
         """,unsafe_allow_html=True)
+st.markdown('<div id="about"> </div>', unsafe_allow_html=True)
+st.markdown("## About")
+st.write("about section")
+
+st.markdown('<div id="skills"></div>', unsafe_allow_html=True)
+st.markdown("## Skills")
+st.write("skills section")
+
+st.markdown('<div id="projects"></div>', unsafe_allow_html=True)
+st.markdown("## projects")
+st.write(" projects section")
+
+st.markdown('<div id="contact"> </div>', unsafe_allow_html=True)
+st.markdown("## contact")
+st.write("contact section")
+        
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
