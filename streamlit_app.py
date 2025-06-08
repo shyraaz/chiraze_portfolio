@@ -8,6 +8,19 @@ footer {Visibility: hidden;}
 header {Visibility: hidden;}
 </style>
 """
+st.markdown(
+    """
+    <style>
+    .intro_text{
+    color:white;
+    font_family: Arial;
+    font_size: 18px;
+    line_height: 1.5;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 def get_base64(file_path):
     with open(file_path, "rb") as f:
@@ -30,12 +43,18 @@ page_bg_img = f"""
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-intro_text = """ About Me i'am a Junior Data Scientist, newly graduated from research master in intelligent systems
-i'am passionate with ai and machine leanring models"""
+intro_text = """ 
+<div class="intro_text">
+
+<h2>About Me</h2>
+<p>i'am a Junior Data Scientist, newly graduated from research master in intelligent systems
+i'am passionate with ai and machine leanring models </p>
+</div>
+"""
 
 col1,col2= st.columns(2)
 with col1:
-    st.markdown(intro_text)
+    st.markdown(intro_text, unsafe_allow_html=True)
 with col2:
     st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", caption="data scientist",use_container_width=True)
 
