@@ -10,7 +10,7 @@ header {Visibility: hidden;}
 """  
 
 st.markdown("""
-     <style>
+     <style>   
      /*header container*/
      .button-row {
      display: flex;
