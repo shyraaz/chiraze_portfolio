@@ -108,13 +108,13 @@ with col2:
     with c1:
          if st.button("About"):
               st.session_state.section="about"
-     with c2:
+    with c2:
           if st.button("Skills"):
                st.session_state.section="skills"
-     with c3:
+    with c3:
           if st.button("Projetcs"):
                st.session_state.section="projects"
-     with c4:
+    with c4:
           if st.button("Contact"):
                st.session_state.section="contact"
           
