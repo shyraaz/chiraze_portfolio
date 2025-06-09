@@ -102,7 +102,7 @@ with col1:
     st.markdown('<div class="header-left"> CF🎀 </div>',
                 unsafe_allow_html=True)
 with col2:
-    st.markdown(<'div class="button-row">', unsafe_allow_html=True)
+    st.markdown('<div class="button-row">', unsafe_allow_html=True)
     c1,c2,c3,c4= st.columns(4)
 
     with c1:
