@@ -15,7 +15,7 @@ st.markdown("""
      .button-row {
      display: flex;
      justify-content: center;
-     aligh-item: center;
+     aligh-items: center;
      margin-top:20px
      gap: 3rem;
      }
@@ -41,11 +41,11 @@ st.markdown("""
 st.markdown("""
 <style>
 .header_left{
-font_size: 10px;
-font_weight:bold;
+font-size: 10px;
+font-weight:bold;
 color: white;
 display:flex;
-align_items:center;
+align-items:center;
 gap:0.5rem;
 }
 
@@ -55,12 +55,12 @@ gap:0.5rem;
     bordr:none;
     color:#fff;
     font_size:1.1rem
-    curser:pointer;
+    cursor:pointer;
 }
 
 .header-center button:hover{
 color:"ff89ff;
-text_decoration:underline
+text-decoration:underline
 }
 
 </style>
@@ -79,9 +79,9 @@ st.markdown(
     <style>
     .intro_text{
     color:white;
-    font_family: Arial;
-    font_size: 18px;
-    line_height: 1.5;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
     }
     </style>
     """,
@@ -102,26 +102,26 @@ with col1:
     st.markdown('<div class="header-left"> CF🎀 </div>',
                 unsafe_allow_html=True)
 with col2:
-    st.markdown("""
+    st.markdown(
     <'div class="button-row">', unsafe_allow_html=True)
-    c1,c2,c3,c4= st.clumns(4)
+    c1,c2,c3,c4= st.columns(4)
 
     with c1:
-    if st.button("About"):
-         st.session_state.section="about"
+         if st.button("About"):
+              st.session_state.section="about"
      with c2:
-     if st.button("Skills"):
-          st.session_state.section="skills"
-     with c3("Projects"):
-          st.session_state.section="projects"
-     with c4("Contact"):
-          st.session_state.section="contact"
+          if st.button("Skills"):
+               st.session_state.section="skills"
+     with c3:
+          if st.button("Projetcs"):
+               st.session_state.section="projects"
+     with c4:
+          if st.button("Contact"):
+               st.session_state.section="contact"
           
     st.markdown('</div>', unsafe_allow_html=True)
         
-    </div>
-    
-    """, unsafe_allow_html=True)
+  
 section = st.session_state.get("section", "")
 if section == "about":
     st.markdown("## 🧠 About")
