@@ -1,5 +1,7 @@
 import streamlit as st
 import base64
+from transformers import pipeline
+
 st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="collapsed")
 hide_streamlit_style = """
 <style>  
@@ -186,8 +188,7 @@ st.markdown("## contact")
 st.write("contact section")
 
 # Your page content
-import streamlit as st
-from transformers import pipeline
+
 
 st.title("Text To Audio App")
 # إعداد الـ pipeline
