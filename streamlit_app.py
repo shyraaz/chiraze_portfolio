@@ -4,7 +4,7 @@ st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide
 hide_streamlit_style = """
 <style>  
 #MainMenu {Visibility: hidden;}
-footer {Visibility: hidden;}
+footer {Visibility: hidden;} 
 header {Visibility: hidden;}
 </style> 
 """    
