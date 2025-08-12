@@ -5,7 +5,7 @@ from transformers import pipeline
 st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="collapsed")
 hide_streamlit_style = """
 <style>  
-#MainMenu {Visibility: hidden;}
+#MainMenu {Visibility: hidden;} 
 footer {Visibility: hidden;} 
 header {Visibility: hidden;}
 </style> 
