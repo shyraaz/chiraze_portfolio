@@ -1,5 +1,5 @@
 import streamlit as st
-import base64
+import base64  
 from transformers import pipeline  
       
 st.set_page_config(page_title="Chiraze Portfolio", page_icon="✨", layout="wide",initial_sidebar_state="collapsed")
