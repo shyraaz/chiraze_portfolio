@@ -193,7 +193,7 @@ st.title("Text To Audio App")
 # إعداد الـ pipeline
 pipe = pipeline("text-to-speech", model="suno/bark-small", device="cpu")
 
-# واجهة Streamlit
+# واجهة Streamlit 
 col = st.columns(2)
 
 with col[0]: 
