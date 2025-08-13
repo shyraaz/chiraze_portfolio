@@ -43,7 +43,7 @@ def get_base64(file_path):
         data = f.read()
     return base64.b64encode(data).decode()
 
-img_path = "images/digital brain (2).png"
+img_path = "digital brain (2).png"
 img_base64 = get_base64(img_path)
 page_bg_img = f"""
 <style>
