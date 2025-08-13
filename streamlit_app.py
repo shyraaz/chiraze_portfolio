@@ -447,7 +447,7 @@ with col1:
         """, unsafe_allow_html=True)
     #st.markdown(about_section, unsafe_allow_html=True)
 with col2:
-    st.image("data_scientist.jpg", width=350)
+    st.image("cyber-security-experts-working-with-tech-devices-neon-lights.jpg", width=350)
     st.markdown(f"""
         """,
         unsafe_allow_html=True   
